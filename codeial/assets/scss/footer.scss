@@ -1,0 +1,19 @@
+#footer-parent{
+    background-color: rgb(107, 107, 107);
+    display: flex;
+    #footer-heading{
+        margin: 0px;
+        color: white;
+        font-family: sans-serif;
+        padding: 15px 5px 15px 5px;
+        box-sizing: border-box; 
+    }
+    #footer-list{
+        list-style: none;
+        font-family: sans-serif;;
+        a{
+        text-decoration: none; 
+        color: white;
+        }
+    }
+}

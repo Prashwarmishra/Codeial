@@ -1,20 +1,21 @@
-<header>
-    <h2>Header</h2>
-    <ul>
+<header id="header-parent">
+    <h2 id="header-heading">Codeial</h2>
+    <ul id="header-list">
         <% if (locals.user){ %>
-            <li>
+            <li id='header-child1'>
                 <a href="/users/profile">
                     <%= user.name %>
                 </a>
             </li>
-            <li>
+            <li id="header-child2">
                 <a href="/users/sign-out">Sign Out</a>
             </li>
         <% }else{ %>
-            <li>
+            <li id="header-child3">
                 <a href="/users/sign-in">Sign In</a>
+            </li>
+            <li id="header-child4">
                 <a href="/users/sign-up">Sign Up</a>
-
             </li>
         <%}%>
     </ul>

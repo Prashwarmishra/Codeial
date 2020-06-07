@@ -1,0 +1,15 @@
+#footer-parent {
+  background-color: #6b6b6b;
+  display: flex; }
+  #footer-parent #footer-heading {
+    margin: 0px;
+    color: white;
+    font-family: sans-serif;
+    padding: 15px 5px 15px 5px;
+    box-sizing: border-box; }
+  #footer-parent #footer-list {
+    list-style: none;
+    font-family: sans-serif; }
+    #footer-parent #footer-list a {
+      text-decoration: none;
+      color: white; }
