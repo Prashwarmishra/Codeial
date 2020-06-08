@@ -35,4 +35,8 @@ module.exports.create = function(req, res){
     });
 }
 
-// save and run  save n run
+// save and run  save n rundone done its working any thing else
+// I didnt understand what was wrong? u dint pass user in post router passport.checkauthentication passes user InputDeviceInfo
+// but this is arpan's sir code mine was working yesterday but not today so i used his code and even it wasn't working
+// // bro what will i know ki what u made yesterday in this code u dint use passport auth for posts so error came 
+// can you point out where in t
