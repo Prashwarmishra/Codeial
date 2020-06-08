@@ -1,23 +1,38 @@
-// const Post = require('../models/post');
+// // const Post = require('../models/post');
 
+// // module.exports.create = function(req, res){
+// //     Post.create({
+// //         content: req.body.content,
+// //         user: req.user._id,
+// //     }, function(err, post){
+// //         if (err){console.log("Error in posting the status."); return;}
+// //         return res.redirect('back');
+// //     })
+// // }
+
+
+// const Post = require('../models/post');
 // module.exports.create = function(req, res){
 //     Post.create({
 //         content: req.body.content,
-//         user: req.user._id,
+//         user: req.user._id
 //     }, function(err, post){
-//         if (err){console.log("Error in posting the status."); return;}
+//         if (err){console.log("Error in creating a post"); return;}
 //         return res.redirect('back');
 //     })
 // }
 
+const Post = require('../models/post')
 
-const Post = require('../models/post');
 module.exports.create = function(req, res){
     Post.create({
-        content: req.body.content,
-        user: req.user._id
+        content:req.body.content,
+        user:req.user._id
     }, function(err, post){
-        if (err){console.log("Error in creating a post"); return;}
+        if(err){console.log('error in creating a post'); return;}
+
         return res.redirect('back');
-    })
+    });
 }
+
+// save and run  save n run

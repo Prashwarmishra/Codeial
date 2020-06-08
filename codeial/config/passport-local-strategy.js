@@ -96,7 +96,7 @@ passport.setAuthenticatedUser = function(req, res, next){
 }
 
 
-// passport.checkAuthentication = function(req, res, next){
+// passport.checkAuthentication = function(req, res, next){// cpoy tat checkay dne
 //     if (req.isAuthenticated()){
 //         return next();
 //     }
