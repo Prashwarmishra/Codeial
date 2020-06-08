@@ -3,13 +3,15 @@
   display: flex; }
   #footer-parent #footer-heading {
     margin: 0px;
+    font-size: 0.7rem;
     color: white;
     font-family: sans-serif;
     padding: 15px 5px 15px 5px;
     box-sizing: border-box; }
   #footer-parent #footer-list {
     list-style: none;
-    font-family: sans-serif; }
+    font-family: sans-serif;
+    font-size: 0.8rem; }
     #footer-parent #footer-list a {
       text-decoration: none;
       color: white; }
