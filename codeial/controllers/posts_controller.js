@@ -11,7 +11,7 @@ module.exports.create = function(req, res){
     })
 }
 
-module.exports.destory = function(req, res){
+module.exports.destroy = function(req, res){
     Post.findById(req.params.id, function(err, post){
         if (err){console.log("There's an error while trying to delete the comment"); return;}
         if (post.user == req.user.id){
@@ -25,3 +25,4 @@ module.exports.destory = function(req, res){
         }
     })
 }
+
