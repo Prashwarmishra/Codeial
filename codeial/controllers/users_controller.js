@@ -2,13 +2,23 @@ const User = require('../models/user');
 
 module.exports.profile = function(req, res){
     User.findById(req.params.id, function(err, user){
-        if (err){console.log("There's an error while trying to load friemds list"); return;}
+        if (err){console.log("There's an error while trying to load friends list"); return;}
         return res.render('users', {
             title: 'Profile',
             profile_user: user,
         });
-    })
-    
+    })   
+}
+
+module.exports.update = function(req, res){
+    if (req.user.id == req.params.id){
+        User.findByIdAndUpdate(req.params.id, req.body, function(err, user){
+            if (err){console.log("There's an error while trying to update the credentials"); return;}
+            return res.redirect("back");
+        })
+    }else{
+        return res.status(401).send("Unauthorized");
+    }
 }
 
 module.exports.signUp = function(req, res){
