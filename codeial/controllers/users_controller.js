@@ -1,9 +1,14 @@
 const User = require('../models/user');
 
 module.exports.profile = function(req, res){
-    return res.render('users', {
-        title: 'Profile',
-    });
+    User.findById(req.params.id, function(err, user){
+        if (err){console.log("There's an error while trying to load friemds list"); return;}
+        return res.render('users', {
+            title: 'Profile',
+            profile_user: user,
+        });
+    })
+    
 }
 
 module.exports.signUp = function(req, res){
